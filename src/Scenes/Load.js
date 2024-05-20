@@ -4,6 +4,7 @@ class Load extends Phaser.Scene {
     }
 
     preload() {
+
         this.load.setPath("./assets/");
 
         // Load characters spritesheet
@@ -18,6 +19,8 @@ class Load extends Phaser.Scene {
             frameWidth: 18,
             frameHeight: 18
         });
+
+        this.load.bitmapFont("minecraftia", "Minecraftia_0.png", "Minecraftia.fnt");
 
         // Oooh, fancy. A multi atlas is a texture atlas which has the textures spread
         // across multiple png files, so as to keep their size small for use with
@@ -59,6 +62,16 @@ class Load extends Phaser.Scene {
             ],
         });
 
+        //Animated coins
+        this.anims.create({
+            key: 'spin',
+            frames: this.anims.generateFrameNumbers('tilemap_sheet', { 
+                start: 151,
+                end: 152,
+             }),
+            frameRate: 16,
+            repeat: -1
+        });
          // ...and pass to the next Scene
          this.scene.start("platformerScene");
     }
