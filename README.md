@@ -1,5 +1,5 @@
-**Platform Improvement**
+**GAME 3: Carrot Hunt**
 
-Starter code for creating a platformer game using Arcade Phsyics in Phaser.
+Finished Game Project for Assignment Game3b.
 
 Visual assets courtesy of [Kenny Assets](https://kenney.nl/assets), with gratitude.
